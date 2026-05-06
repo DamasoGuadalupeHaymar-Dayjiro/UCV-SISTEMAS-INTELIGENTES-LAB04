@@ -1,4 +1,4 @@
-````md
+
 # UCV - Sistemas Inteligentes - Laboratorio 04
 
 ## API de Visión por Computadora con FastAPI y OpenCV
