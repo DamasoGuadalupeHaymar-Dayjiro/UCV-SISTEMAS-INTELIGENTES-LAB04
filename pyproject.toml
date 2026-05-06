@@ -1,0 +1,23 @@
+[project]
+name = "lab4_api_cv"
+version = "0.1.0"
+description = "API de procesamiento de imagenes con FastAPI y OpenCV"
+readme = "README.md"
+authors = [
+    {name = "DamasoGuadalupeHaymar-Dayjiro", email = "hadamasog@ucvvirtual.edu.pe"}
+]
+requires-python = ">=3.12"
+dependencies = ["fastapi (>=0.136.1,<0.137.0)", "uvicorn (>=0.46.0,<0.47.0)", "opencv-python (>=4.13.0.92,<5.0.0.0)", "numpy (>=2.4.4,<3.0.0)", "python-multipart (>=0.0.27,<0.0.28)"]
+
+[tool.poetry]
+packages = [
+    { include = "lab4_api_cv", from = "src" }
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.3,<10.0.0)"
+]
